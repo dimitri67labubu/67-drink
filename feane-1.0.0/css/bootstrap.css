@@ -3054,7 +3054,7 @@ input[type="button"].btn-block {
   margin-left: 0;
 }
 
-.dropdown-menu {
+.dropdown-drinks {
   position: absolute;
   top: 100%;
   left: 0;
@@ -3074,61 +3074,61 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
-.dropdown-menu-left {
+.dropdown-drinks-left {
   right: auto;
   left: 0;
 }
 
-.dropdown-menu-right {
+.dropdown-drinks-right {
   right: 0;
   left: auto;
 }
 
 @media (min-width: 576px) {
-  .dropdown-menu-sm-left {
+  .dropdown-drinks-sm-left {
     right: auto;
     left: 0;
   }
-  .dropdown-menu-sm-right {
+  .dropdown-drinks-sm-right {
     right: 0;
     left: auto;
   }
 }
 
 @media (min-width: 768px) {
-  .dropdown-menu-md-left {
+  .dropdown-drinks-md-left {
     right: auto;
     left: 0;
   }
-  .dropdown-menu-md-right {
+  .dropdown-drinks-md-right {
     right: 0;
     left: auto;
   }
 }
 
 @media (min-width: 992px) {
-  .dropdown-menu-lg-left {
+  .dropdown-drinks-lg-left {
     right: auto;
     left: 0;
   }
-  .dropdown-menu-lg-right {
+  .dropdown-drinks-lg-right {
     right: 0;
     left: auto;
   }
 }
 
 @media (min-width: 1200px) {
-  .dropdown-menu-xl-left {
+  .dropdown-drinks-xl-left {
     right: auto;
     left: 0;
   }
-  .dropdown-menu-xl-right {
+  .dropdown-drinks-xl-right {
     right: 0;
     left: auto;
   }
 }
 
-.dropup .dropdown-menu {
+.dropup .dropdown-drinks {
   top: auto;
   bottom: 100%;
   margin-top: 0;
@@ -3150,7 +3150,7 @@ input[type="button"].btn-block {
   margin-left: 0;
 }
 
-.dropright .dropdown-menu {
+.dropright .dropdown-drinks {
   top: 0;
   right: auto;
   left: 100%;
@@ -3177,7 +3177,7 @@ input[type="button"].btn-block {
   vertical-align: 0;
 }
 
-.dropleft .dropdown-menu {
+.dropleft .dropdown-drinks {
   top: 0;
   right: 100%;
   left: auto;
@@ -3214,7 +3214,7 @@ input[type="button"].btn-block {
   vertical-align: 0;
 }
 
-.dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {
+.dropdown-drinks[x-placement^="top"], .dropdown-drinks[x-placement^="right"], .dropdown-drinks[x-placement^="bottom"], .dropdown-drinks[x-placement^="left"] {
   right: auto;
   bottom: auto;
 }
@@ -3257,7 +3257,7 @@ input[type="button"].btn-block {
   background-color: transparent;
 }
 
-.dropdown-menu.show {
+.dropdown-drinks.show {
   display: block;
 }
 
@@ -4106,7 +4106,7 @@ input[type="button"].btn-block {
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
-.nav-tabs .dropdown-menu {
+.nav-tabs .dropdown-drinks {
   margin-top: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -4198,7 +4198,7 @@ input[type="button"].btn-block {
   padding-left: 0;
 }
 
-.navbar-nav .dropdown-menu {
+.navbar-nav .dropdown-drinks {
   position: static;
   float: none;
 }
@@ -4260,7 +4260,7 @@ input[type="button"].btn-block {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .navbar-expand-sm .navbar-nav .dropdown-menu {
+  .navbar-expand-sm .navbar-nav .dropdown-drinks {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
@@ -4302,7 +4302,7 @@ input[type="button"].btn-block {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .navbar-expand-md .navbar-nav .dropdown-menu {
+  .navbar-expand-md .navbar-nav .dropdown-drinks {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
@@ -4344,7 +4344,7 @@ input[type="button"].btn-block {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
+  .navbar-expand-lg .navbar-nav .dropdown-drinks {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -4386,7 +4386,7 @@ input[type="button"].btn-block {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .navbar-expand-xl .navbar-nav .dropdown-menu {
+  .navbar-expand-xl .navbar-nav .dropdown-drinks {
     position: absolute;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
@@ -4427,7 +4427,7 @@ input[type="button"].btn-block {
   flex-direction: row;
 }
 
-.navbar-expand .navbar-nav .dropdown-menu {
+.navbar-expand .navbar-nav .dropdown-drinks {
   position: absolute;
 }
 

@@ -110,6 +110,12 @@ a:focus {
   height: 100%;
 }
 
+/* ensure background image doesn't block interaction with page content */
+.bg-box {
+  z-index: -1;
+  pointer-events: none;
+}
+
 .bg-box img {
   width: 100%;
   height: 100%;
@@ -140,6 +146,7 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
+  background-color: #000000;
 }
 
 .header_section .container-fluid {
@@ -411,7 +418,7 @@ a:focus {
   margin-top: 45px;
   border-radius: 5px;
   padding: 20px 15px;
-  background-color: #222831;
+  background-color: #000;
   color: #ffffff;
 }
 
@@ -477,7 +484,7 @@ a:focus {
           transform: scale(1.1);
 }
 
-.food_section .filters_menu {
+.food_section .filters_drinks {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,13 +498,19 @@ a:focus {
   margin: 45px 0 20px 0;
 }
 
-.food_section .filters_menu li {
+/* ensure filter buttons are above background and interactive */
+.food_section .filters_drinks {
+  position: relative;
+  z-index: 5;
+}
+
+.food_section .filters_drinks li {
   padding: 7px 25px;
   cursor: pointer;
   border-radius: 25px;
 }
 
-.food_section .filters_menu li.active {
+.food_section .filters_drinks li.active {
   background-color: #222831;
   color: #ffffff;
 }
@@ -539,6 +552,7 @@ a:focus {
 
 .food_section .box .detail-box {
   padding: 25px;
+  background-color: #000000;
 }
 
 .food_section .box .detail-box h5 {
@@ -589,6 +603,16 @@ a:focus {
           transform: scale(1.1);
 }
 
+/* Isotope filter transition: fade and subtle scale */
+.grid .all {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* When Isotope hides items it applies styles; ensure hidden ones are not interactive */
+.grid .all.isotope-hidden {
+  pointer-events: none;
+}
+
 .food_section .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,7 +639,7 @@ a:focus {
 }
 
 .about_section {
-  background: #222831;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -900,7 +924,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #222831;
+  background-color: #000000;
   color: #ffffff;
   padding: 75px 0 40px 0;
   text-align: center;

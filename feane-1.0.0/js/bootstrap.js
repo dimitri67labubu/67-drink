@@ -1818,17 +1818,17 @@
         DROPUP: "dropup",
         DROPRIGHT: "dropright",
         DROPLEFT: "dropleft",
-        MENURIGHT: "dropdown-menu-right",
-        MENULEFT: "dropdown-menu-left",
+        drinksRIGHT: "dropdown-drinks-right",
+        drinksLEFT: "dropdown-drinks-left",
         POSITION_STATIC: "position-static",
     };
     var Selector$4 = {
         DATA_TOGGLE: '[data-toggle="dropdown"]',
         FORM_CHILD: ".dropdown form",
-        MENU: ".dropdown-menu",
+        drinks: ".dropdown-drinks",
         NAVBAR_NAV: ".navbar-nav",
         VISIBLE_ITEMS:
-            ".dropdown-menu .dropdown-item:not(.disabled):not(:disabled)",
+            ".dropdown-drinks .dropdown-item:not(.disabled):not(:disabled)",
     };
     var AttachmentMap = {
         TOP: "top-start",
@@ -1867,7 +1867,7 @@
                 this._element = element;
                 this._popper = null;
                 this._config = this._getConfig(config);
-                this._menu = this._getMenuElement();
+                this._drinks = this._getdrinksElement();
                 this._inNavbar = this._detectNavbar();
 
                 this._addEventListeners();
@@ -1886,9 +1886,9 @@
 
                 var parent = Dropdown._getParentFromElement(this._element);
 
-                var isActive = $(this._menu).hasClass(ClassName$4.SHOW);
+                var isActive = $(this._drinks).hasClass(ClassName$4.SHOW);
 
-                Dropdown._clearMenus();
+                Dropdown._cleardrinkss();
 
                 if (isActive) {
                     return;
@@ -1928,7 +1928,7 @@
                             referenceElement = this._config.reference[0];
                         }
                     } // If boundary is not `scrollParent`, then set position to `static`
-                    // to allow the menu to "escape" the scroll parent's boundaries
+                    // to allow the drinks to "escape" the scroll parent's boundaries
                     // https://github.com/twbs/bootstrap/issues/24251
 
                     if (this._config.boundary !== "scrollParent") {
@@ -1937,7 +1937,7 @@
 
                     this._popper = new Popper(
                         referenceElement,
-                        this._menu,
+                        this._drinks,
                         this._getPopperConfig()
                     );
                 } // If this is a touch-enabled device we add extra
@@ -1956,7 +1956,7 @@
 
                 this._element.setAttribute("aria-expanded", true);
 
-                $(this._menu).toggleClass(ClassName$4.SHOW);
+                $(this._drinks).toggleClass(ClassName$4.SHOW);
                 $(parent)
                     .toggleClass(ClassName$4.SHOW)
                     .trigger($.Event(Event$4.SHOWN, relatedTarget));
@@ -1966,7 +1966,7 @@
                 if (
                     this._element.disabled ||
                     $(this._element).hasClass(ClassName$4.DISABLED) ||
-                    $(this._menu).hasClass(ClassName$4.SHOW)
+                    $(this._drinks).hasClass(ClassName$4.SHOW)
                 ) {
                     return;
                 }
@@ -1984,7 +1984,7 @@
                     return;
                 }
 
-                $(this._menu).toggleClass(ClassName$4.SHOW);
+                $(this._drinks).toggleClass(ClassName$4.SHOW);
                 $(parent)
                     .toggleClass(ClassName$4.SHOW)
                     .trigger($.Event(Event$4.SHOWN, relatedTarget));
@@ -1994,7 +1994,7 @@
                 if (
                     this._element.disabled ||
                     $(this._element).hasClass(ClassName$4.DISABLED) ||
-                    !$(this._menu).hasClass(ClassName$4.SHOW)
+                    !$(this._drinks).hasClass(ClassName$4.SHOW)
                 ) {
                     return;
                 }
@@ -2012,7 +2012,7 @@
                     return;
                 }
 
-                $(this._menu).toggleClass(ClassName$4.SHOW);
+                $(this._drinks).toggleClass(ClassName$4.SHOW);
                 $(parent)
                     .toggleClass(ClassName$4.SHOW)
                     .trigger($.Event(Event$4.HIDDEN, relatedTarget));
@@ -2022,7 +2022,7 @@
                 $.removeData(this._element, DATA_KEY$4);
                 $(this._element).off(EVENT_KEY$4);
                 this._element = null;
-                this._menu = null;
+                this._drinks = null;
 
                 if (this._popper !== null) {
                     this._popper.destroy();
@@ -2065,16 +2065,16 @@
                 return config;
             };
 
-            _proto._getMenuElement = function _getMenuElement() {
-                if (!this._menu) {
+            _proto._getdrinksElement = function _getdrinksElement() {
+                if (!this._drinks) {
                     var parent = Dropdown._getParentFromElement(this._element);
 
                     if (parent) {
-                        this._menu = parent.querySelector(Selector$4.MENU);
+                        this._drinks = parent.querySelector(Selector$4.drinks);
                     }
                 }
 
-                return this._menu;
+                return this._drinks;
             };
 
             _proto._getPlacement = function _getPlacement() {
@@ -2084,14 +2084,14 @@
                 if ($parentDropdown.hasClass(ClassName$4.DROPUP)) {
                     placement = AttachmentMap.TOP;
 
-                    if ($(this._menu).hasClass(ClassName$4.MENURIGHT)) {
+                    if ($(this._drinks).hasClass(ClassName$4.drinksRIGHT)) {
                         placement = AttachmentMap.TOPEND;
                     }
                 } else if ($parentDropdown.hasClass(ClassName$4.DROPRIGHT)) {
                     placement = AttachmentMap.RIGHT;
                 } else if ($parentDropdown.hasClass(ClassName$4.DROPLEFT)) {
                     placement = AttachmentMap.LEFT;
-                } else if ($(this._menu).hasClass(ClassName$4.MENURIGHT)) {
+                } else if ($(this._drinks).hasClass(ClassName$4.drinksRIGHT)) {
                     placement = AttachmentMap.BOTTOMEND;
                 }
 
@@ -2172,7 +2172,7 @@
                 });
             };
 
-            Dropdown._clearMenus = function _clearMenus(event) {
+            Dropdown._cleardrinkss = function _cleardrinkss(event) {
                 if (
                     event &&
                     (event.which === RIGHT_MOUSE_BUTTON_WHICH ||
@@ -2201,7 +2201,7 @@
                         continue;
                     }
 
-                    var dropdownMenu = context._menu;
+                    var dropdowndrinks = context._drinks;
 
                     if (!$(parent).hasClass(ClassName$4.SHOW)) {
                         continue;
@@ -2233,7 +2233,7 @@
                     }
 
                     toggles[i].setAttribute("aria-expanded", "false");
-                    $(dropdownMenu).removeClass(ClassName$4.SHOW);
+                    $(dropdowndrinks).removeClass(ClassName$4.SHOW);
                     $(parent)
                         .removeClass(ClassName$4.SHOW)
                         .trigger($.Event(Event$4.HIDDEN, relatedTarget));
@@ -2262,14 +2262,14 @@
                 //  - If space key => not a dropdown command
                 //  - If key is other than escape
                 //    - If key is not up or down => not a dropdown command
-                //    - If trigger inside the menu => not a dropdown command
+                //    - If trigger inside the drinks => not a dropdown command
                 if (
                     /input|textarea/i.test(event.target.tagName)
                         ? event.which === SPACE_KEYCODE ||
                           (event.which !== ESCAPE_KEYCODE &&
                               ((event.which !== ARROW_DOWN_KEYCODE &&
                                   event.which !== ARROW_UP_KEYCODE) ||
-                                  $(event.target).closest(Selector$4.MENU)
+                                  $(event.target).closest(Selector$4.drinks)
                                       .length))
                         : !REGEXP_KEYDOWN.test(event.which)
                 ) {
@@ -2374,12 +2374,12 @@
         )
         .on(
             Event$4.KEYDOWN_DATA_API,
-            Selector$4.MENU,
+            Selector$4.drinks,
             Dropdown._dataApiKeydownHandler
         )
         .on(
             Event$4.CLICK_DATA_API + " " + Event$4.KEYUP_DATA_API,
-            Dropdown._clearMenus
+            Dropdown._cleardrinkss
         )
         .on(Event$4.CLICK_DATA_API, Selector$4.DATA_TOGGLE, function (event) {
             event.preventDefault();
@@ -4311,7 +4311,7 @@
     };
     var ClassName$8 = {
         DROPDOWN_ITEM: "dropdown-item",
-        DROPDOWN_MENU: "dropdown-menu",
+        DROPDOWN_drinks: "dropdown-drinks",
         ACTIVE: "active",
     };
     var Selector$8 = {
@@ -4691,7 +4691,7 @@
         CLICK_DATA_API: "click" + EVENT_KEY$9 + DATA_API_KEY$7,
     };
     var ClassName$9 = {
-        DROPDOWN_MENU: "dropdown-menu",
+        DROPDOWN_drinks: "dropdown-drinks",
         ACTIVE: "active",
         DISABLED: "disabled",
         FADE: "fade",
@@ -4705,7 +4705,7 @@
         DATA_TOGGLE:
             '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]',
         DROPDOWN_TOGGLE: ".dropdown-toggle",
-        DROPDOWN_ACTIVE_CHILD: "> .dropdown-menu .active",
+        DROPDOWN_ACTIVE_CHILD: "> .dropdown-drinks .active",
         /**
          * ------------------------------------------------------------------------
          * Class Definition
@@ -4873,7 +4873,7 @@
 
                 if (
                     element.parentNode &&
-                    $(element.parentNode).hasClass(ClassName$9.DROPDOWN_MENU)
+                    $(element.parentNode).hasClass(ClassName$9.DROPDOWN_drinks)
                 ) {
                     var dropdownElement = $(element).closest(
                         Selector$9.DROPDOWN
