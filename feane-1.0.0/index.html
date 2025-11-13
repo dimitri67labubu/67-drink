@@ -23,6 +23,7 @@
   <!-- nice select  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
   <!-- font awesome style -->
+  
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
@@ -72,7 +73,7 @@
                 <a class="nav-link" href="drinks.html">Drinks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="book.html">contact</a>
@@ -106,10 +107,12 @@
                   </g>
                 </svg>
               </a>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+              <form class="form-inline" onsubmit="return false;" style="position:relative;">
+                <input id="site-search" class="form-control mr-sm-2" type="search" placeholder="Rechercher un alcool..." aria-label="Search" style="min-width:180px; display:none;">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="button" id="search-btn">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
+                <div id="search-results" class="search-results dropdown-menu" style="display:none; position:absolute; right:0; top:42px; min-width:220px; z-index:2000;"></div>
               </form>
               <a href="" class="order_online">
                 Order Online
@@ -193,36 +196,6 @@
                      c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                       </g>
                     </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
                   </svg>
                 </a>
               </div>
@@ -261,36 +234,6 @@
                         <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                      c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                       </g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
                     </g>
                   </svg>
                 </a>
@@ -406,7 +349,7 @@
             Opening Hours
           </h4>
           <p>
-            Everyday I'm Hustling
+            "Everyday, I'm Hustling", Rick Ross
           </p>
           <p>
             4.00 Am - 3.00 Am
