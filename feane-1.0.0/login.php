@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
   <!-- Page title -->
-  <title>67 Drinks - Inscription</title>
+  <title>67 Drinks - Login</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -33,9 +33,9 @@
   <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <!-- Custom styles for register form -->
+  <!-- Custom styles for login form -->
   <style>
-    .register_section {
+    .login_section {
       padding: 60px 0;
       background: #ffffff;
       display: flex;
@@ -44,28 +44,28 @@
       min-height: 60vh;
     }
 
-    .register-box {
+    .login-box {
       background: #ffffff;
       padding: 40px;
-      width: 400px;
+      width: 320px;
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 
-    .register-box h1 {
+    .login-box h1 {
       text-align: center;
       margin-bottom: 30px;
       color: #000000;
     }
 
-    .register-box label {
+    .login-box label {
       display: block;
       margin-bottom: 6px;
       font-weight: bold;
       color: #000000;
     }
 
-    .register-box input {
+    .login-box input {
       width: 100%;
       padding: 10px;
       margin-bottom: 20px;
@@ -74,12 +74,12 @@
       font-size: 14px;
     }
 
-    .register-box input:focus {
+    .login-box input:focus {
       outline: none;
       border-color: #000000;
     }
 
-    .register-box button {
+    .login-box button {
       width: 100%;
       padding: 12px;
       background: #ffbe33;
@@ -89,24 +89,24 @@
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
-      margin-bottom: 15px;
     }
 
-    .register-box button:hover {
+    .login-box button:hover {
       background: #e69c00;
     }
 
-    .register-box .footer {
+    .login-box .footer {
       text-align: center;
+      margin-top: 15px;
       font-size: 13px;
     }
 
-    .register-box .footer a {
+    .login-box .footer a {
       color: #000000;
       text-decoration: none;
     }
 
-    .register-box .footer a:hover {
+    .login-box .footer a:hover {
       text-decoration: underline;
     }
   </style>
@@ -121,7 +121,7 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <span>
               67 Drinks
             </span>
@@ -134,21 +134,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">home </a>
+                <a class="nav-link" href="index.php">home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="drinks.html">drinks</a>
+                <a class="nav-link" href="drinks.php">drinks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.php">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="book.html">contact</a>
+                <a class="nav-link" href="book.php">contact</a>
               </li>
             </ul>
             <div class="user_option">
-              <!-- Removed user_link on register page -->
-              <a class="cart_link" href="drinks.html">
+              <!-- Removed user_link on login page -->
+              <a class="cart_link" href="#">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
@@ -188,25 +188,23 @@
     <!-- End header section -->
   </div>
 
-  <!-- Register section -->
-  <section class="register_section">
+  <!-- Login section -->
+  <section class="login_section">
     <div class="container">
-      <div class="register-box">
-        <h1>Inscription</h1>
-        <form method="post" id="registerForm">
+      <div class="login-box">
+        <h1>Connexion</h1>
+        <form method="post">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="ex: user@mail.com" required>
 
           <label for="password">Mot de passe</label>
           <input type="password" id="password" name="password" placeholder="••••••••" required>
 
-          <label for="confirmPassword">Confirmer le mot de passe</label>
-          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required>
-
-          <button type="submit">Créer un compte</button>
+          <button type="submit">Se connecter</button>
         </form>
         <div class="footer">
-          <p>Déjà un compte ? <a href="login.html">Se connecter</a></p>
+          <p>Mot de passe oublié ? <a href="#">Clique ici</a></p>
+          <p>Pas de compte ? <a href="register.php">Créer un compte</a></p>
         </div>
       </div>
     </div>
@@ -252,19 +250,19 @@
               Helping alcoholics to become better ones since 1969
             </p>
             <div class="footer_social">
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-pinterest" aria-hidden="true"></i>
               </a>
             </div>
@@ -316,34 +314,26 @@
   </script>
   <!-- End Google Map -->
 
-  <!-- Registration script for storing user data -->
+  <!-- Login script for authentication -->
   <script>
-    document.getElementById('registerForm').addEventListener('submit', function(e) {
+    document.querySelector('.login-box form').addEventListener('submit', function(e) {
       e.preventDefault();
 
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      const confirmPassword = document.getElementById('confirmPassword').value;
 
-      if (password !== confirmPassword) {
-        alert('Les mots de passe ne correspondent pas.');
-        return;
-      }
-
-      // Store user data in localStorage (simple client-side storage)
+      // Get stored users from localStorage
       const users = JSON.parse(localStorage.getItem('users')) || [];
-      const existingUser = users.find(user => user.email === email);
+      const user = users.find(u => u.email === email && u.password === password);
 
-      if (existingUser) {
-        alert('Un compte avec cet email existe déjà.');
-        return;
+      if (user) {
+        // Set current user in localStorage
+        localStorage.setItem('currentUser', JSON.stringify(user));
+        alert('Connexion réussie ! Redirection vers la boutique...');
+        window.location.href = 'shop.php';
+      } else {
+        alert('Email ou mot de passe incorrect.');
       }
-
-      users.push({ email: email, password: password });
-      localStorage.setItem('users', JSON.stringify(users));
-
-      alert('Compte créé avec succès ! Vous pouvez maintenant vous connecter.');
-      window.location.href = 'login.html';
     });
   </script>
 

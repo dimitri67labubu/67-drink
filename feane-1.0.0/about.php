@@ -1,10 +1,8 @@
-<!-- DOCTYPE and HTML opening -->
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
-<!-- Head section with meta, title, and links -->
 <head>
-  <!-- Basic meta tags -->
+  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
@@ -15,113 +13,36 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <!-- Page title -->
-  <title>67 Drinks - Login</title>
+  <title> 67 Drinks - About us</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- Owl slider stylesheet -->
+  <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- Nice select -->
+  <!-- nice select  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
-  <!-- Font awesome style -->
+  <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- Responsive style -->
+  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <!-- Custom styles for login form -->
-  <style>
-    .login_section {
-      padding: 60px 0;
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 60vh;
-    }
-
-    .login-box {
-      background: #ffffff;
-      padding: 40px;
-      width: 320px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    }
-
-    .login-box h1 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #000000;
-    }
-
-    .login-box label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-      color: #000000;
-    }
-
-    .login-box input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-    }
-
-    .login-box input:focus {
-      outline: none;
-      border-color: #000000;
-    }
-
-    .login-box button {
-      width: 100%;
-      padding: 12px;
-      background: #ffbe33;
-      border: none;
-      border-radius: 6px;
-      color: #000000;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .login-box button:hover {
-      background: #e69c00;
-    }
-
-    .login-box .footer {
-      text-align: center;
-      margin-top: 15px;
-      font-size: 13px;
-    }
-
-    .login-box .footer a {
-      color: #000000;
-      text-decoration: none;
-    }
-
-    .login-box .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
-<!-- Body section -->
 <body class="sub_page">
 
-  <!-- Hero area with header section -->
   <div class="hero_area">
-    <!-- Header section starts -->
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <span>
               67 Drinks
             </span>
@@ -133,22 +54,24 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">home </a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.php">home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="drinks.html">drinks</a>
+                <a class="nav-link" href="drinks.php">drinks</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.php">About <span class="sr-only">(current)</span> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="book.html">contact</a>
+                <a class="nav-link" href="book.php">contact</a>
               </li>
             </ul>
             <div class="user_option">
-              <!-- Removed user_link on login page -->
-              <a class="cart_link" href="#">
+              <a href="login.php" class="user_link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </a>
+              <a class="cart_link" href="shop.php">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
@@ -185,32 +108,40 @@
         </nav>
       </div>
     </header>
-    <!-- End header section -->
+    <!-- end header section -->
   </div>
 
-  <!-- Login section -->
-  <section class="login_section">
-    <div class="container">
-      <div class="login-box">
-        <h1>Connexion</h1>
-        <form method="post">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="ex: user@mail.com" required>
+  <!-- about section -->
 
-          <label for="password">Mot de passe</label>
-          <input type="password" id="password" name="password" placeholder="••••••••" required>
+  <section class="about_section layout_padding">
+    <div class="container  ">
 
-          <button type="submit">Se connecter</button>
-        </form>
-        <div class="footer">
-          <p>Mot de passe oublié ? <a href="#">Clique ici</a></p>
-          <p>Pas de compte ? <a href="register.html">Créer un compte</a></p>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/vinasse.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                We Are 67 Drinks
+              </h2>
+            </div>
+            <p>
+              Et là justement il faudrait trouver la fameuse suite. En soit, même ChatGPT
+              peux faire l'affaire. Il faut juste un pavé à découper en genre deux ou trois paragraphes.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer section -->
+  <!-- end about section -->
+
+  <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
       <div class="row">
@@ -250,19 +181,19 @@
               Helping alcoholics to become better ones since 1969
             </p>
             <div class="footer_social">
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-pinterest" aria-hidden="true"></i>
               </a>
             </div>
@@ -287,55 +218,30 @@
             <a href="https://themewagon.com/">ThemeWagon.com</a><br><br>
           </p>
         </div>
-      </div>
     </div>
   </footer>
-  <!-- End footer section -->
+  <!-- footer section -->
 
-  <!-- Scripts -->
-  <!-- jQuery -->
+  <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Popper js -->
+  <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
-  <!-- Bootstrap js -->
+  <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
-  <!-- Owl slider -->
+  <!-- owl slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
-  <!-- Isotope js -->
+  <!-- isotope js -->
   <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-  <!-- Nice select -->
+  <!-- nice select -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-  <!-- Custom js -->
+  <!-- custom js -->
   <script src="js/custom.js"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-
-  <!-- Login script for authentication -->
-  <script>
-    document.querySelector('.login-box form').addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-
-      // Get stored users from localStorage
-      const users = JSON.parse(localStorage.getItem('users')) || [];
-      const user = users.find(u => u.email === email && u.password === password);
-
-      if (user) {
-        // Set current user in localStorage
-        localStorage.setItem('currentUser', JSON.stringify(user));
-        alert('Connexion réussie ! Redirection vers la boutique...');
-        window.location.href = 'shop.html';
-      } else {
-        alert('Email ou mot de passe incorrect.');
-      }
-    });
-  </script>
 
 </body>
 

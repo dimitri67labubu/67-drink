@@ -199,7 +199,7 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.php">
             <span>
               67 Drinks
             </span>
@@ -212,23 +212,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">home </a>
+                <a class="nav-link" href="index.php">home </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="drinks.html">drinks</a>
+                <a class="nav-link" href="drinks.php">drinks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.php">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="book.html">contact</a>
+                <a class="nav-link" href="book.php">contact</a>
               </li>
             </ul>
             <div class="user_option">
-              <a href="login.html" class="user_link">
+              <a href="login.php" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
-              <a class="cart_link" href="shop.html">
+              <a class="cart_link" href="shop.php">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
@@ -331,19 +331,19 @@
               Helping alcoholics to become better ones since 1969
             </p>
             <div class="footer_social">
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-              <a href="../feane-1.0.0/surprise.html">
+              <a href="../feane-1.0.0/surprise.php">
                 <i class="fa fa-pinterest" aria-hidden="true"></i>
               </a>
             </div>
@@ -454,7 +454,7 @@
           <div class="login-required">
             <h2>Connexion Requise</h2>
             <p>Vous devez être connecté pour accéder à la boutique.</p>
-            <a href="login.html">Se connecter</a>
+            <a href="login.php">Se connecter</a>
           </div>
         `;
         return false;

@@ -1,0 +1,352 @@
+<!-- DOCTYPE and HTML opening -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Head section with meta, title, and links -->
+<head>
+  <!-- Basic meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <!-- Page title -->
+  <title>67 Drinks - Inscription</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- Owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- Font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Custom styles for register form -->
+  <style>
+    .register_section {
+      padding: 60px 0;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+    }
+
+    .register-box {
+      background: #ffffff;
+      padding: 40px;
+      width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .register-box h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #000000;
+    }
+
+    .register-box label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .register-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .register-box input:focus {
+      outline: none;
+      border-color: #000000;
+    }
+
+    .register-box button {
+      width: 100%;
+      padding: 12px;
+      background: #ffbe33;
+      border: none;
+      border-radius: 6px;
+      color: #000000;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    .register-box button:hover {
+      background: #e69c00;
+    }
+
+    .register-box .footer {
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .register-box .footer a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .register-box .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<!-- Body section -->
+<body class="sub_page">
+
+  <!-- Hero area with header section -->
+  <div class="hero_area">
+    <!-- Header section starts -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.php">
+            <span>
+              67 Drinks
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.php">home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="drinks.php">drinks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.php">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="book.php">contact</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <!-- Removed user_link on register page -->
+              <a class="cart_link" href="drinks.php">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="" class="order_online">
+                Order Online
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End header section -->
+  </div>
+
+  <!-- Register section -->
+  <section class="register_section">
+    <div class="container">
+      <div class="register-box">
+        <h1>Inscription</h1>
+        <form method="post" id="registerForm">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="ex: user@mail.com" required>
+
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+          <label for="confirmPassword">Confirmer le mot de passe</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required>
+
+          <button type="submit">Créer un compte</button>
+        </form>
+        <div class="footer">
+          <p>Déjà un compte ? <a href="login.php">Se connecter</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Don't Contact Us
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Not our establishement
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Don't Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  itisascma@notarealwebsite.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              67 Drinks
+            </a>
+            <p>
+              Helping alcoholics to become better ones since 1969
+            </p>
+            <div class="footer_social">
+              <a href="../feane-1.0.0/surprise.php">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="../feane-1.0.0/surprise.php">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="../feane-1.0.0/surprise.php">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="../feane-1.0.0/surprise.php">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="../feane-1.0.0/surprise.php">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Opening Hours
+          </h4>
+          <p>
+            "Everyday, I'm Hustling", Rick Ross
+          </p>
+          <p>
+            4.00 Am - 3.00 Am
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-info">
+          <p>
+            &copy; <span id="displayYear"></span> Special Thanks to
+            <a href="https://themewagon.com/">ThemeWagon.com</a><br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer section -->
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- Owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- Isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- Nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+  <!-- Registration script for storing user data -->
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      if (password !== confirmPassword) {
+        alert('Les mots de passe ne correspondent pas.');
+        return;
+      }
+
+      // Store user data in localStorage (simple client-side storage)
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      const existingUser = users.find(user => user.email === email);
+
+      if (existingUser) {
+        alert('Un compte avec cet email existe déjà.');
+        return;
+      }
+
+      users.push({ email: email, password: password });
+      localStorage.setItem('users', JSON.stringify(users));
+
+      alert('Compte créé avec succès ! Vous pouvez maintenant vous connecter.');
+      window.location.href = 'login.html';
+    });
+  </script>
+
+</body>
+
+</html>
